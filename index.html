@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1>rank india</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Hi, I'm <span class="highlight">keval rane</span></h2>
+                    <p class="hero-subtitle">Full Stack Developer | Creative Problem Solver</p>
+                    <p class="hero-description">
+                        Building beautiful and functional web experiences. I specialize in creating responsive,
+                        user-friendly applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate developer with 5+ years of experience building web applications.
+                        I love turning complex problems into simple, beautiful, and intuitive designs.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, contributing to open source,
+                        or enjoying coffee while reading tech blogs.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>30+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="coding-illustration modern-dev">
+                        <div class="gradient-bg"></div>
+                        <div class="code-symbol-container">
+                            <div class="code-symbol"><i class="fas fa-code"></i></div>
+                        </div>
+                        <div class="glow-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Services</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React, Vue</p>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>UI/UX Implementation</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Python, Express, Django</p>
+                    <ul>
+                        <li>RESTful APIs</li>
+                        <li>Database Design</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Management</h3>
+                    <p>MongoDB, PostgreSQL, MySQL</p>
+                    <ul>
+                        <li>Data Modeling</li>
+                        <li>Query Optimization</li>
+                        <li>Backup & Recovery</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Technologies</h3>
+                    <p>Git, Docker, AWS, CI/CD</p>
+                    <ul>
+                        <li>Version Control</li>
+                        <li>Containerization</li>
+                        <li>Cloud Deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder-small">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce solution with payment integration, user authentication, and admin
+                            dashboard.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder-small">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task management application with real-time updates, team collaboration, and
+                            analytics.</p>
+                        <div class="project-tags">
+                            <span>Vue</span>
+                            <span>Firebase</span>
+                            <span>WebSockets</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder-small">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time data visualization dashboard with interactive charts and advanced filtering
+                            capabilities.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-date">April 15, 2026</div>
+                    <h3>Getting Started with React Hooks</h3>
+                    <p>
+                        Learn how to use React Hooks to manage state and side effects in functional components.
+                        In this comprehensive guide, I'll show you best practices and common patterns.
+                    </p>
+                    <div class="blog-tags">
+                        <span>#react</span>
+                        <span>#javascript</span>
+                        <span>#frontend</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">April 10, 2026</div>
+                    <h3>Optimizing Web Performance</h3>
+                    <p>
+                        Discover techniques to improve your website's loading speed and performance.
+                        From lazy loading to code splitting, we'll cover everything you need to know.
+                    </p>
+                    <div class="blog-tags">
+                        <span>#performance</span>
+                        <span>#optimization</span>
+                        <span>#web</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-date">April 5, 2026</div>
+                    <h3>Building Scalable APIs with Node.js</h3>
+                    <p>
+                        Best practices for designing and implementing scalable REST APIs using Node.js and Express.
+                        Learn about middleware, error handling, and database optimization.
+                    </p>
+                    <div class="blog-tags">
+                        <span>#nodejs</span>
+                        <span>#backend</span>
+                        <span>#api</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:kevelgod24@gmail.com">kevelgod24@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+917387095986">+91 73870-95986</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Militha Home, Near DMart, Ravet, Pune, Maharashtra, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" title="Portfolio"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 keval rane. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
